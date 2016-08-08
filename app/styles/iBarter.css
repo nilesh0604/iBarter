@@ -4,6 +4,12 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+
+@font-face {
+    font-family: 'Ubuntu Condensed';
+    src: url('../fonts/UbuntuCondensed-Regular.ttf');
+}
+
 body{
 	padding:0;
 	font-family: 'Open Sans', sans-serif;
@@ -4824,5 +4830,56 @@ label {
 	font-size: 24px;
 }
 
+.navbar-toggle {
+	padding: 6px 7px;
+	margin-top: 11px;
+}
 
+.navbar-default .navbar-toggle {
+	border-color: #015f4e;
+}
 
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #015f4e;
+}
+
+.list-group-item {
+	padding: 12px 15px;
+}
+
+.list-group-item.active,
+.list-group-item.active:focus {
+	background-color: #01866e;
+  border-color: #01866e;
+}
+
+.app {
+	background: #fff;
+}
+
+.navbar-app {
+	border-color: #01866e;
+  background-color: rgba(1, 161, 133, 0.65);
+}
+
+.navbar-app .btn-navbar,
+.navbar-app .btn {
+	color: #015f4e;
+}
+
+.has-navbar-top .app-body {
+	padding-top: 10px;
+}
+
+.has-navbar-bottom .app-body {
+	padding-bottom: 25px;
+}
+
+.sidebar-left {
+	background: #3c3d41;
+}
+
+.navbar-app .btn-navbar:hover,
+.navbar-app .btn:hover {
+	color: #015f4e;
+}

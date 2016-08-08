@@ -205,11 +205,6 @@
   font-style: normal;
 }
 
-@font-face {
-    font-family: 'Ubuntu Condensed';
-    src: url('../fonts/UbuntuCondensed-Regular.ttf');
-}
-
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -5978,10 +5973,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   float: right;
   margin-right: 15px;
-  /*padding: 9px 10px;*/
-  padding: 6px 7px;
-  /*margin-top: 8px;*/
-  margin-top: 11px;
+  padding: 9px 10px;
+  margin-top: 8px;
   margin-bottom: 8px;
   background-color: transparent;
   background-image: none;
@@ -6135,8 +6128,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default .navbar-toggle {
-  /*border-color: #dddddd;*/
-  border-color: #015f4e;
+  border-color: #dddddd;
 }
 
 .navbar-default .navbar-toggle:focus {
@@ -6144,8 +6136,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  /*background-color: #cccccc;*/
-  background-color: #015f4e;
+  background-color: #cccccc;
 }
 
 .navbar-default .navbar-collapse,
@@ -6775,8 +6766,7 @@ a.thumbnail.active {
 .list-group-item {
   position: relative;
   display: block;
-  /*padding: 10px 15px;*/
-  padding: 12px 15px;
+  padding: 10px 15px;
   margin-bottom: -1px;
   background-color: #ffffff;
   border: 1px solid #dddddd;
@@ -6836,10 +6826,8 @@ button.list-group-item {
 .list-group-item.active:focus {
   z-index: 2;
   color: #ffffff;
-  /*background-color: #007aff;
-  border-color: #007aff;*/
-  background-color: #01866e;
-  border-color: #01866e;
+  background-color: #007aff;
+  border-color: #007aff;
 }
 
 .list-group-item.active .list-group-item-heading,
@@ -8425,9 +8413,7 @@ a.list-group-item .icon.pull-right {
   position: relative;
   z-index: 2;
   width: 100%;
-  /*default css changed by Nilesh*/
-  /*background: #777777;*/
-  background: #fff;
+  background: #777777;
   overflow: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -8464,11 +8450,8 @@ a.list-group-item .icon.pull-right {
 
 .navbar-app {
   min-height: 50px;
-  /*border-color: #cccccc;*/
-  border-color: #01866e;
-  background-color: rgba(1, 161, 133, 0.65);
-  /*changed by Nilesh*/
-  /*background: #f7f7f7;*/
+  border-color: #cccccc;
+  background: #f7f7f7;
   border-width: 1px;
   border-style: solid;
   color: #007aff;
@@ -8487,8 +8470,7 @@ a.list-group-item .icon.pull-right {
   line-height: 50px;
   padding-top: 0;
   padding-bottom: 0;
-  /*color: #007aff;*/
-  color: #015f4e;
+  color: #007aff;
   text-transform: uppercase;
 }
 
@@ -8514,15 +8496,11 @@ a.list-group-item .icon.pull-right {
 }
 
 .has-navbar-top .app-body {
-  /*default css chnaged by Nilesh*/
-  /*padding-top: 51px;*/
-  padding-top: 10px;
+  padding-top: 51px;
 }
 
 .has-navbar-bottom .app-body {
-  /*default css chnaged by Nilesh*/
-  /*padding-bottom: 51px;*/
-  padding-bottom: 25px;
+  padding-bottom: 51px;
 }
 
 .navbar-absolute-top {
@@ -8553,8 +8531,7 @@ a.list-group-item .icon.pull-right {
 }
 
 .sidebar-left {
-  /*background: #555555;*/
-  background: #3c3d41;
+  background: #555555;
   width: 300px;
   left: 0;
   right: auto;
