@@ -2942,7 +2942,7 @@ section.list-right span.price:after {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
 }
-.feed-back-form input[type="submit"]:hover 
+.feed-back-form input[type="submit"]:hover {
 	color: #000;
 	background-color: #01a185;
 }
