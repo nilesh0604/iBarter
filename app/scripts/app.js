@@ -25,6 +25,11 @@ angular
         controllerAs: 'home',
         reloadOnSearch: false
       })
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'LoginCtrl',
+        controllerAs: 'login'
+      })
       .otherwise({
         redirectTo: '/'
       });
