@@ -4883,3 +4883,29 @@ label {
 .navbar-app .btn:hover {
 	color: #015f4e;
 }
+
+.list-group-item, a.list-group-item {
+	border-bottom: 0px solid #dddddd
+}
+
+.list-group:first-child {
+	outline: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+
+.list-group:last-child {
+	margin-bottom: 20px;
+}
+
+.scrollable-header {
+	background: #3c3d41;
+}
+
+.sidebar-left {
+	background: #fff;
+}
+
+#viewcontrols a {
+	font-size: 20px;
+}
