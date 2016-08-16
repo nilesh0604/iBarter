@@ -5,7 +5,7 @@
     <div class="scrollable-content">
         <div class="main-banner banner text-center">
             <div class="container">
-                <h1>Sell or Advertise   <span class="segment-heading">    anything online </span> with Resale</h1>
+                <h1>Sell or Advertise   <span class="segment-heading">    anything online </span> with iBarter</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                 <a href="post-ad.html">Post Free Ad</a>
             </div>
@@ -16,13 +16,13 @@
                 <div class="featured-ads">
                     <h2 class="sear-head fer">Newly Added</h2>
                     <div id="container">
-                        <ul class="list">
-                            <a href="single.html">
+                        <ul class="list" ng-repeat="product in newlyAddedProducts">
+                            <a href="#/product">
                                 <li>
                                     <img src="images/m1.jpg" title="" alt="" />
                                     <section class="list-left">
-                                        <h5 class="title">There are many variations of passages of Lorem Ipsum</h5>
-                                        <span class="adprice">$290</span>
+                                        <h5 class="title">{{product.name}}</h5>
+                                        <span class="adprice">¥{{product.price}}</span>
                                         <p class="catpath">Mobile Phones » Brand</p>
                                     </section>
                                     <section class="list-right">
@@ -31,97 +31,7 @@
                                     </section>
                                     <div class="clearfix"></div>
                                 </li>
-                            </a>
-                            <a href="single.html">
-                                <li>
-                                    <img src="images/m2.jpg" title="" alt="" />
-                                    <section class="list-left">
-                                        <h5 class="title">It is a long established fact that a reader long established</h5>
-                                        <span class="adprice">$310</span>
-                                        <p class="catpath">Mobile Phones » Brand</p>
-                                    </section>
-                                    <section class="list-right">
-                                        <span class="date">Today, 17:45</span>
-                                        <span class="cityname">City name</span>
-                                    </section>
-                                    <div class="clearfix"></div>
-                                </li>
-                            </a>
-                            <a href="single.html">
-                                <li>
-                                    <img src="images/m3.jpg" title="" alt="" />
-                                    <section class="list-left">
-                                        <h5 class="title">Contrary to popular belief, Lorem Ipsum is not</h5>
-                                        <span class="adprice">$190</span>
-                                        <p class="catpath">Mobile Phones » Brand</p>
-                                    </section>
-                                    <section class="list-right">
-                                        <span class="date">Today, 17:30</span>
-                                        <span class="cityname">City name</span>
-                                    </section>
-                                    <div class="clearfix"></div>
-                                </li>
-                            </a>
-                            <a href="single.html">
-                                <li>
-                                    <img src="images/m4.jpg" title="" alt="" />
-                                    <section class="list-left">
-                                        <h5 class="title">The standard chunk of Lorem Ipsum used since the</h5>
-                                        <span class="adprice">$480</span>
-                                        <p class="catpath">Mobile Phones » Brand</p>
-                                    </section>
-                                    <section class="list-right">
-                                        <span class="date">Today, 17:25</span>
-                                        <span class="cityname">City name</span>
-                                    </section>
-                                    <div class="clearfix"></div>
-                                </li>
-                            </a>
-                            <a href="single.html">
-                                <li>
-                                    <img src="images/m5.jpg" title="" alt="" />
-                                    <section class="list-left">
-                                        <h5 class="title">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h5>
-                                        <span class="adprice">$859</span>
-                                        <p class="catpath">Mobile Phones » Brand</p>
-                                    </section>
-                                    <section class="list-right">
-                                        <span class="date">Today, 17:24</span>
-                                        <span class="cityname">City name</span>
-                                    </section>
-                                    <div class="clearfix"></div>
-                                </li>
-                            </a>
-                            <a href="single.html">
-                                <li>
-                                    <img src="images/m6.jpg" title="" alt="" />
-                                    <section class="list-left">
-                                        <h5 class="title">But I must explain to you how all this mistaken idea of denouncing</h5>
-                                        <span class="adprice">$1299</span>
-                                        <p class="catpath">Mobile Phones » Brand</p>
-                                    </section>
-                                    <section class="list-right">
-                                        <span class="date">Today, 17:22</span>
-                                        <span class="cityname">City name</span>
-                                    </section>
-                                    <div class="clearfix"></div>
-                                </li>
-                            </a>
-                            <a href="single.html">
-                                <li>
-                                    <img src="images/m1.jpg" title="" alt="" />
-                                    <section class="list-left">
-                                        <h5 class="title">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</h5>
-                                        <span class="adprice">$1099</span>
-                                        <p class="catpath">Mobile Phones » Brand</p>
-                                    </section>
-                                    <section class="list-right">
-                                        <span class="date">Today, 17:21</span>
-                                        <span class="cityname">City name</span>
-                                    </section>
-                                    <div class="clearfix"></div>
-                                </li>
-                            </a>
+                            </a>    
                         </ul>
                     </div>
                     <div class="clearfix"></div>

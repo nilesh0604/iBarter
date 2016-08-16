@@ -14,17 +14,4 @@ angular.module('iBarterApp')
             'AngularJS',
             'Karma'
         ];
-
-
-        $scope.initSlider = function() {
-            $(function() {
-                // wait till load event fires so all resources are available
-                $('.flexslider').flexslider({
-                    animation: "slide",
-                    controlNav: "thumbnails"
-                });
-            });
-        };
-
-        $scope.initSlider();
     });

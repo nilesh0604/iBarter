@@ -9,7 +9,7 @@
     "flexslider-destroy": "*"
   },
   "devDependencies": {
-    "angular-mocks": "^1.4.0",
+    "angular-mocks": "^1.4.0"
   },
   "appPath": "app",
   "moduleName": "iBarterApp"

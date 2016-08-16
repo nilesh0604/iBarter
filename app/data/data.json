@@ -1,0 +1,40 @@
+[{
+    "id": 1,
+    "name": "Apple iPhone 6 (Space Black, 8 GB)",
+    "description": "The bigger the better - the Apple iPhone 6 is an exemplar of this phrase. The meticulously crafted iPhone 6 is truly an epitome of great taste and elegance.",
+    "price": 3000,
+    "images": ["ss1.jpg", "ss2.jpg", "ss3.jpg"],
+    "tags": ["iphone", "apple"],
+    "createdOn": "",
+    "itemLocation": "",
+    "category": "electronics",
+    "categoryId": "1",
+    "addedBy": "Nilesh Shinde",
+    "addedByUserId": "1234"
+}, {
+    "id": 2,
+    "name": "Apple iPhone 6 (Space Grey, 16 GB)",
+    "description": "The bigger the better - the Apple iPhone 6 is an exemplar of this phrase. The meticulously crafted iPhone 6 is truly an epitome of great taste and elegance.",
+    "price": 4000,
+    "images": ["ss1.jpg", "ss2.jpg", "ss3.jpg"],
+    "tags": ["iphone", "apple"],
+    "createdOn": "",
+    "itemLocation": "",
+    "category": "electronics",
+    "categoryId": "1",
+    "addedBy": "Nilesh Shinde",
+    "addedByUserId": "1234"
+}, {
+    "id": 3,
+    "name": "Apple iPhone 6 (Space Silver, 32 GB)",
+    "description": "The bigger the better - the Apple iPhone 6 is an exemplar of this phrase. The meticulously crafted iPhone 6 is truly an epitome of great taste and elegance.",
+    "price": 5000,
+    "images": ["ss1.jpg", "ss2.jpg", "ss3.jpg"],
+    "tags": ["iphone", "apple"],
+    "createdOn": "",
+    "itemLocation": "",
+    "category": "electronics",
+    "categoryId": "1",
+    "addedBy": "Nilesh Shinde",
+    "addedByUserId": "1234"
+}]
