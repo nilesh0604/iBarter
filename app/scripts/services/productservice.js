@@ -8,7 +8,7 @@
  * Service in the iBarterApp.
  */
 angular.module('iBarterApp')
-    .service('productService', function($http, $q) {
+    .service('productService', function($http, $q, env) {
         // AngularJS will instantiate a singleton by calling "new" on this function
 
 
@@ -16,9 +16,10 @@ angular.module('iBarterApp')
         function getNewlyAddedProducts() {
             var request = $http({
                 method: 'get',
-                url: 'data/data.json',
-                params: {
-                    action: 'get'
+                url: env.IBARTERAPIURL+'products',
+                //url: 'data/data.json',
+                headers: {
+                    'Content-Type': 'application/json'
                 }
             });
 

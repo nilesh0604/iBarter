@@ -8,9 +8,11 @@
  * Controller of the iBarterApp
  */
 angular.module('iBarterApp')
-    .controller('HomeCtrl', function($scope, productService) {
+    .controller('HomeCtrl', function($scope, productService, env) {
 
         $scope.newlyAddedProducts = [];
+
+        $scope.imagePath = env.IMAGESPATH;
 
         function applyRemoteData(products) {
             $scope.newlyAddedProducts = products;

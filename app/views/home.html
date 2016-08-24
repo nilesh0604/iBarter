@@ -19,7 +19,7 @@
                         <ul class="list" ng-repeat="product in newlyAddedProducts">
                             <a href="#/product">
                                 <li>
-                                    <img src="images/m1.jpg" title="" alt="" />
+                                    <img src="{{imagePath}}{{product.images[0]}}" title="" alt="" />
                                     <section class="list-left">
                                         <h5 class="title">{{product.name}}</h5>
                                         <span class="adprice">¥{{product.price}}</span>
