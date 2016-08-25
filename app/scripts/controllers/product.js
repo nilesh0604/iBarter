@@ -8,7 +8,7 @@
  * Controller of the iBarterApp
  */
 angular.module('iBarterApp')
-    .controller('ProductCtrl', function($scope) {
+    .controller('ProductCtrl', function() {
         this.awesomeThings = [
             'HTML5 Boilerplate',
             'AngularJS',
