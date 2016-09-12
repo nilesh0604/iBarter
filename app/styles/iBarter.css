@@ -4909,3 +4909,7 @@ label {
 #viewcontrols a {
 	font-size: 20px;
 }
+
+.section-loading {
+	position: inherit !important;
+}

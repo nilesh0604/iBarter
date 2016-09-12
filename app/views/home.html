@@ -13,7 +13,10 @@
         <!-- content-starts-here -->
         <div class="content">
             <div class="container">
-                <div class="featured-ads">
+                <div ng-if="sectionLoading" class="app-content-loading section-loading">
+                    <i class="fa fa-spinner fa-spin loading-spinner"></i>
+                </div>
+                <div ng-if="!sectionLoading" class="featured-ads">
                     <h2 class="sear-head fer">Newly Added</h2>
                     <div id="container">
                         <ul class="list" ng-repeat="product in newlyAddedProducts">
@@ -31,7 +34,7 @@
                                     </section>
                                     <div class="clearfix"></div>
                                 </li>
-                            </a>    
+                            </a>
                         </ul>
                     </div>
                     <div class="clearfix"></div>
