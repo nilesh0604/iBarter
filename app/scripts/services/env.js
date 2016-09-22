@@ -11,7 +11,7 @@ angular.module('iBarterApp')
   .constant('env', (function() {
 
   var myHost = 'http://www.nileshshinde.com/';
-  var openshiftHost = 'http://ibarterapi-nilesh.rhcloud.com/';
+  var openshiftHost = 'http://ibarterapi2-nilesh.rhcloud.com/';
   //var localhost = 'http://localhost:8080/';
 
   return {
