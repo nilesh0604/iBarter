@@ -12,10 +12,11 @@ angular.module('iBarterApp')
 
   var myHost = 'http://www.nileshshinde.com/';
   var openshiftHost = 'http://ibarterapi2-nilesh.rhcloud.com/';
+  var heroku = 'https://test9090.herokuapp.com/';
   //var localhost = 'http://localhost:8080/';
 
   return {
   	IMAGESPATH: myHost+'ibarter/images/',
-  	IBARTERAPIURL: openshiftHost+'api/'
+  	IBARTERAPIURL: heroku+'api/'
   };
 })());
