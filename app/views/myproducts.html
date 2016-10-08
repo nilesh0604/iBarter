@@ -1,0 +1,44 @@
+<div ui-content-for="title">
+    <span>My Products</span>
+</div>
+<div class="scrollable">
+    <div class="scrollable-content">
+        <div ng-if="sectionLoading" class="loader">
+            <div class="overlay"></div>
+            <i class="fa fa-spinner fa-spin loading-spinner"></i>
+        </div>
+        <!-- content-starts-here -->
+        <div class="content" ng-if="showContent">
+            <div class="container">
+                <div class="featured-ads">
+                    <div id="container">
+                        <div>
+                            <a class="btn btn-success" href="#/addProduct" role="button">
+                                <i class="fa fa-plus" aria-hidden="true"></i> Add Product</a>
+                        </div>
+                        <ul class="list" ng-repeat="product in newlyAddedProducts">
+                            <div>
+                                <li id="{{product._id}}">
+                                    <img ng-src="{{imagePath}}{{product.images[0]}}" title="" alt="" />
+                                    <section class="list-left">
+                                        <a href ng-click="removeProduct(product._id)"><i class="fa fa-trash fa-2 pull-right"  style="font-size: 25px; color: #000; margin-right: 10px" aria-hidden="true"></i></a>
+                                        <a ng-href="#/updateProduct/{{product._id}}"><i class="fa fa-pencil fa-2 pull-right" style="font-size: 25px; color: #000; margin-right: 10px" aria-hidden="true"></i></a>
+                                        <h5 class="title">{{product.name}}</h5>
+                                        <span class="adprice">¥{{product.price}}</span>
+                                        <p class="catpath">{{product.category}}</p>
+                                    </section>
+                                    <section class="list-right">
+                                        <span class="date">{{product.createdOn | date:'fullDate'}}</span>
+                                        <span class="cityname">{{product.itemLocation}}</span>
+                                    </section>
+                                    <div class="clearfix"></div>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
