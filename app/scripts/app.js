@@ -56,6 +56,24 @@ angular
                 controllerAs: 'product',
                 reloadOnSearch: false
             })
+            .when('/myProducts', {
+                templateUrl: 'views/myproducts.html',
+                controller: 'MyproductsCtrl',
+                controllerAs: 'myProducts',
+                reloadOnSearch: false
+            })
+            .when('/addProduct', {
+                templateUrl: 'views/addproduct.html',
+                controller: 'AddproductCtrl',
+                controllerAs: 'addProduct',
+                reloadOnSearch: false
+            })
+            .when('/updateProduct/:id', {
+              templateUrl: 'views/updateproduct.html',
+              controller: 'UpdateproductCtrl',
+              controllerAs: 'updateProduct',
+              reloadOnSearch: false
+            })
             .otherwise({
                 redirectTo: '/'
             });

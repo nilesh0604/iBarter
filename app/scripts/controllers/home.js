@@ -14,15 +14,11 @@ angular.module('iBarterApp')
 
         $scope.imagePath = env.IMAGESPATH;
 
-        function applyRemoteData(products) {
-            $rootScope.sectionLoading = false;
-            $scope.newlyAddedProducts = products;
-        }
-
         function getNewlyAddedProducts() {
             $rootScope.sectionLoading = true;
             productService.getNewlyAddedProducts().then(function(products) {
-                applyRemoteData(products);
+                $rootScope.sectionLoading = false;
+                $scope.newlyAddedProducts = products;
             });
         }
 

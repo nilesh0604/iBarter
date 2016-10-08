@@ -15,9 +15,59 @@ angular.module('iBarterApp')
         // I get all of the newly added products in the remote collection.
         function getNewlyAddedProducts() {
             var request = $http({
-                method: 'get',
+                method: 'GET',
                 url: env.IBARTERAPIURL+'products',
                 //url: 'data/data.json',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            return (request.then(handleSuccess, handleError));
+        }
+
+        function addNewProduct(product) {
+            var request = $http({
+                method: 'POST',
+                url: env.IBARTERAPIURL+'products',
+                data: product,
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            return (request.then(handleSuccess, handleError));
+        }
+
+        function getProductById(id) {
+            var request = $http({
+                method: 'GET',
+                url: env.IBARTERAPIURL+'products/'+id,
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            return (request.then(handleSuccess, handleError));
+        }
+
+        function updateProduct(product) {
+            var request = $http({
+                method: 'PUT',
+                url: env.IBARTERAPIURL+'products',
+                data: product,
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            return (request.then(handleSuccess, handleError));
+        }
+
+        function removeProduct(id) {
+            var request = $http({
+                method: 'DELETE',
+                url: env.IBARTERAPIURL+'products/'+id,
                 headers: {
                     'Content-Type': 'application/json'
                 }
@@ -51,6 +101,10 @@ angular.module('iBarterApp')
 
         // Otherwise, use expected error message.
         return ({
-            getNewlyAddedProducts: getNewlyAddedProducts
+            getNewlyAddedProducts: getNewlyAddedProducts,
+            addNewProduct: addNewProduct,
+            removeProduct: removeProduct,
+            updateProduct: updateProduct,
+            getProductById: getProductById
         });
     });

@@ -3,6 +3,10 @@
 </div>
 <div class="scrollable">
     <div class="scrollable-content">
+        <div ng-if="sectionLoading" class="loader">
+            <div class="overlay"></div>
+            <i class="fa fa-spinner fa-spin loading-spinner"></i>
+        </div>
         <div class="main-banner banner text-center">
             <div class="container">
                 <h1>Sell or Advertise   <span class="segment-heading">    anything online </span> with iBarter</h1>
@@ -13,9 +17,6 @@
         <!-- content-starts-here -->
         <div class="content">
             <div class="container">
-                <div ng-if="sectionLoading" class="app-content-loading section-loading">
-                    <i class="fa fa-spinner fa-spin loading-spinner"></i>
-                </div>
                 <div ng-if="!sectionLoading" class="featured-ads">
                     <h2 class="sear-head fer">Newly Added</h2>
                     <div id="container">
@@ -26,11 +27,11 @@
                                     <section class="list-left">
                                         <h5 class="title">{{product.name}}</h5>
                                         <span class="adprice">¥{{product.price}}</span>
-                                        <p class="catpath">Mobile Phones » Brand</p>
+                                        <p class="catpath">{{product.category}}</p>
                                     </section>
                                     <section class="list-right">
-                                        <span class="date">Today, 17:55</span>
-                                        <span class="cityname">City name</span>
+                                        <span class="date">{{product.createdOn | date:'fullDate'}}</span>
+                                        <span class="cityname">{{product.itemLocation}}</span>
                                     </section>
                                     <div class="clearfix"></div>
                                 </li>
