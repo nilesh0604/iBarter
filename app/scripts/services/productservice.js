@@ -64,6 +64,19 @@ angular.module('iBarterApp')
             return (request.then(handleSuccess, handleError));
         }
 
+        function updateProductImages(product) {
+            var request = $http({
+                method: 'PUT',
+                url: env.IBARTERAPIURL+'updateImages',
+                data: product,
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+
+            return (request.then(handleSuccess, handleError));
+        }
+
         function removeProduct(id) {
             var request = $http({
                 method: 'DELETE',

@@ -12,7 +12,8 @@ angular
     .module('iBarterApp', [
         'ngRoute',
         'mobile-angular-ui',
-        'mobile-angular-ui.gestures'
+        'mobile-angular-ui.gestures',
+        'ngFileUpload'
     ])
     .run(function($transform) {
         window.$transform = $transform;
@@ -72,6 +73,12 @@ angular
               templateUrl: 'views/updateproduct.html',
               controller: 'UpdateproductCtrl',
               controllerAs: 'updateProduct',
+              reloadOnSearch: false
+            })
+            .when('/uploadPhotos/:id', {
+              templateUrl: 'views/uploadphotos.html',
+              controller: 'UploadphotosCtrl',
+              controllerAs: 'uploadPhotos',
               reloadOnSearch: false
             })
             .otherwise({

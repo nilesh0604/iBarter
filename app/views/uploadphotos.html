@@ -1,0 +1,36 @@
+<div ui-content-for="title">
+    <span>Upload Product Photos</span>
+</div>
+<div class="scrollable">
+    <div class="scrollable-content">
+        <!-- content-starts-here -->
+        <div class="content">
+            <div class="container">
+                <h4 style="margin-top: 20px;">
+                    Upload Product Images
+                    <a href="" class="pull-right" ngf-select="uploadFiles($files, $invalidFiles)" multiple
+          accept="image/jpeg" ngf-pattern="'image/jpeg'" ngf-max-height="1000" ngf-max-size="3MB"><i class="fa fa-cloud-upload fa-lg" aria-hidden="true"></i></a>
+                </h4>
+                <ul class="image-upload-container" style="margin-top: 20px;">
+                    <li ng-repeat="f in files">
+                        <i class="fa fa-picture-o" style="margin-right: 10px" aria-hidden="true"></i> {{f.name}} <i class="fa fa-trash fa-lg pull-right" ng-if="f.uploadFinished" aria-hidden="true"></i><span class="pull-right" ng-if="!f.uploadFinished">{{f.progress}}% Complete</span>
+                        <div class="progress">
+                            <div class="progress-bar" ng-class="{'progress-bar-striped active': !f.uploadFinished, 'progress-bar-success progress-bar-striped': f.uploadFinished
+}" role="progressbar" aria-valuenow="{{f.progress}}" aria-valuemin="0" aria-valuemax="100" style="width: {{f.progress}}%">
+                                <span class="sr-only">{{f.progress}}% Complete</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li ng-repeat="f in errFiles">
+                        {{f.name}} {{f.$error}} {{f.$errorParam}}
+                    </li>
+                </ul>
+                <!-- <hr style="margin-bottom: 10px; margin-top: 10px">  -->
+                <div class="action-bar">
+                    <a href="" ng-click="updateImages()" class="btn btn-success pull-right" ng-class="{'disabled': !allUploadFinished}">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                    <a class="btn btn-default" href="#/addProduct" ng-class="{'disabled': !allUploadFinished}"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
