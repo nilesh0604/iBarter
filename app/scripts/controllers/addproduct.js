@@ -16,7 +16,7 @@ angular.module('iBarterApp')
         ];
 
         $scope.sectionLoading = false;
-        //$scope.product;
+        $scope.product = {};
 
         $scope.addNewProduct = function() {
             $scope.sectionLoading = true;

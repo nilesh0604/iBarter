@@ -118,6 +118,7 @@ angular.module('iBarterApp')
             addNewProduct: addNewProduct,
             removeProduct: removeProduct,
             updateProduct: updateProduct,
-            getProductById: getProductById
+            getProductById: getProductById,
+            updateProductImages: updateProductImages
         });
     });

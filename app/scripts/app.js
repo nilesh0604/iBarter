@@ -51,7 +51,7 @@ angular
                 controllerAs: 'productList',
                 reloadOnSearch: false
             })
-            .when('/product', {
+            .when('/product/:id', {
                 templateUrl: 'views/product.html',
                 controller: 'ProductCtrl',
                 controllerAs: 'product',

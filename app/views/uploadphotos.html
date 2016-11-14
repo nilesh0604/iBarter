@@ -3,8 +3,12 @@
 </div>
 <div class="scrollable">
     <div class="scrollable-content">
+        <div ng-if="sectionLoading" class="loader">
+            <div class="overlay"></div>
+            <i class="fa fa-spinner fa-spin loading-spinner"></i>
+        </div>
         <!-- content-starts-here -->
-        <div class="content">
+        <div class="content" ng-if="!sectionLoading">
             <div class="container">
                 <h4 style="margin-top: 20px;">
                     Upload Product Images

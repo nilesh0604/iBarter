@@ -19,7 +19,7 @@
                         <ul class="list" ng-repeat="product in newlyAddedProducts">
                             <div>
                                 <li id="{{product._id}}">
-                                    <img ng-src="{{imagePath}}{{product.images[0]}}" title="" alt="" />
+                                    <a href="#/product/{{product._id}}"><img ng-src="{{imagePath}}{{product.images[0]}}" title="" alt="" /></a>
                                     <section class="list-left">
                                         <a href ng-click="removeProduct(product._id)"><i class="fa fa-trash fa-2 pull-right"  style="font-size: 25px; color: #000; margin-right: 10px" aria-hidden="true"></i></a>
                                         <a ng-href="#/updateProduct/{{product._id}}"><i class="fa fa-pencil fa-2 pull-right" style="font-size: 25px; color: #000; margin-right: 10px" aria-hidden="true"></i></a>

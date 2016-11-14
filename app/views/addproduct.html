@@ -8,7 +8,7 @@
             <i class="fa fa-spinner fa-spin loading-spinner"></i>
         </div>
         <!-- content-starts-here -->
-        <div class="content" ng-if="!sectionLoading" >
+        <div class="content" ng-show="!sectionLoading" >
             <div class="container">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Name</label>
@@ -47,7 +47,7 @@
                     </select>
                 </div>
                 <hr style="margin-bottom: 10px; margin-top: 10px">	
-                <a href="" ng-click="addNewProduct()" class="btn btn-success pull-right">Next <i class="fa fa-share" aria-hidden="true"></i></a>
+                <a href="" ng-click="addNewProduct()" class="btn btn-success pull-right">Next <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                 <a class="btn btn-default" href="#/myproducts" >Cancel</a>
             </div>
         </div>
